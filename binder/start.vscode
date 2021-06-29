@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ###############################################
-# copying vscode config files
+# Copying vscode config files
 ###############################################
 
 # mkdir -p /home/$USER/.config/Code/User
@@ -14,11 +14,14 @@
 #cp ~/.vscode/keybindings.json /home/$USER/.local/share/code-server/User/
 
 ###############################################
-#installing vs code extensions
+# Installing vs code extensions
 ###############################################
 code-server --install-extension formulahendry.vscode-mysql
 code-server --install-extension jakebathman.mysql-syntax
 code-server --install-extension mtxr.sqltools
 
 
-
+###############################################
+# Starting code-server
+###############################################
+code-server .  --auth none &

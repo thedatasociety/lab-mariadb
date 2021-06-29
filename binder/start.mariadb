@@ -1,12 +1,12 @@
 #!/bin/bash
 
-mkdir ${MARIADB_HOME}/mysql-data
+mkdir ${MARIADB_HOME}/mariadb-data
 
 touch ${MARIADB_HOME}/server-config.cnf
 echo "[server]"                           >> ${MARIADB_HOME}/server-config.cnf
 echo "user=${USER}"                       >> ${MARIADB_HOME}/server-config.cnf
 echo "basedir=${MARIADB_HOME}"            >> ${MARIADB_HOME}/server-config.cnf
-echo "datadir=${MARIADB_HOME}/mysql-data" >> ${MARIADB_HOME}/server-config.cnf
+echo "datadir=${MARIADB_HOME}/mariadb-data" >> ${MARIADB_HOME}/server-config.cnf
 echo "socket=${MARIADB_HOME}/socket"      >> ${MARIADB_HOME}/server-config.cnf
 echo "port=3306"                          >> ${MARIADB_HOME}/server-config.cnf
 
@@ -17,4 +17,12 @@ $MARIADB_HOME/scripts/mysql_install_db  --defaults-file=$MARIADB_HOME/server-con
                                         --socket=${MARIADB_HOME}/socket    
 
 cd     ${MARIADB_HOME} && \
-nohup  ${MARIADB_HOME}/bin/mysqld_safe --datadir=${MARIADB_HOME}/mysql-data &
+${MARIADB_HOME}/bin/mariadbd-safe --datadir=${MARIADB_HOME}/mariadb-data  --skip-grant-tables &
+
+# waiting for mariadbd startup
+while ! mariadb-admin ping -h 127.0.0.1 --silent; do
+    echo "mariadb is down...";
+    sleep 5
+done
+
+echo "mariadb is up!";

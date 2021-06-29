@@ -12,6 +12,9 @@ jupyter serverextension enable jupyterlab_sql --py --sys-prefix
 echo "Table of contents Jupyter Lab extension install"
 jupyter labextension install @jupyterlab/toc --no-build 
 
+# [MariaDB Kernel] Install the kernelspec so that the kernel becomes visible to JupyterLab 
+python3 -m mariadb_kernel.install
+
 # Building everything up
 #echo "Building everything up (jupyter lab build)"
 # jupyter lab build 
@@ -28,43 +31,43 @@ cd    ~/resources/local
 #             mariadb installation                           #
 ###############################################################
 
-# export MARIADB_VERSION=10.4.6
-# echo "export MARIADB_VERSION=${MARIADB_VERSION}" >> ~/.bashrc
-# echo "export MARIADB_VERSION=${MARIADB_VERSION}" >> ~/.profile
+export MARIADB_VERSION=10.4.20
+echo "export MARIADB_VERSION=${MARIADB_VERSION}" >> ~/.bashrc
+echo "export MARIADB_VERSION=${MARIADB_VERSION}" >> ~/.profile
 
-# export MARIADB_HOME=$(pwd)/mariadb-${MARIADB_VERSION}
-# echo "export MARIADB_HOME=${MARIADB_HOME}"       >> ~/.bashrc
-# echo "export MARIADB_HOME=${MARIADB_HOME}"       >> ~/.profile
+export MARIADB_HOME=$(pwd)/mariadb-${MARIADB_VERSION}
+echo "export MARIADB_HOME=${MARIADB_HOME}"       >> ~/.bashrc
+echo "export MARIADB_HOME=${MARIADB_HOME}"       >> ~/.profile
 
-# wget http://mirror.ufscar.br/mariadb//mariadb-${MARIADB_VERSION}/bintar-linux-glibc_214-x86_64/mariadb-${MARIADB_VERSION}-linux-glibc_214-x86_64.tar.gz -q  && \
-# tar -xvf mariadb-${MARIADB_VERSION}-linux-glibc_214-x86_64.tar.gz >> /dev/null  && \
-# rm mariadb-${MARIADB_VERSION}-linux-glibc_214-x86_64.tar.gz                     && \
-# mv mariadb-${MARIADB_VERSION}-linux-glibc_214-x86_64 mariadb-${MARIADB_VERSION} 
+wget http://mirror.ufscar.br/mariadb//mariadb-${MARIADB_VERSION}/bintar-linux-glibc_214-x86_64/mariadb-${MARIADB_VERSION}-linux-glibc_214-x86_64.tar.gz -q  && \
+tar -xvf mariadb-${MARIADB_VERSION}-linux-glibc_214-x86_64.tar.gz >> /dev/null  && \
+rm mariadb-${MARIADB_VERSION}-linux-glibc_214-x86_64.tar.gz                     && \
+mv mariadb-${MARIADB_VERSION}-linux-glibc_214-x86_64 mariadb-${MARIADB_VERSION} 
 
-# # adding bin/ to $path
-# echo "export PATH=\$PATH:\$MARIADB_HOME/bin"     >> ~/.bashrc
-# echo "export PATH=\$PATH:\$MARIADB_HOME/bin"     >> ~/.profile
+# adding bin/ to $path
+echo "export PATH=\$PATH:\$MARIADB_HOME/bin"     >> ~/.bashrc
+echo "export PATH=\$PATH:\$MARIADB_HOME/bin"     >> ~/.profile
 
 ###############################################################
 #             mysql-minimal installation                      #
 ###############################################################
 
-export MYSQL_VERSION=8.0.17
-echo "export MYSQL_VERSION=${MYSQL_VERSION}" >> ~/.bashrc
-echo "export MYSQL_VERSION=${MYSQL_VERSION}" >> ~/.profile
+# export MYSQL_VERSION=8.0.17
+# echo "export MYSQL_VERSION=${MYSQL_VERSION}" >> ~/.bashrc
+# echo "export MYSQL_VERSION=${MYSQL_VERSION}" >> ~/.profile
 
-export MYSQL_HOME=$(pwd)/mysql-${MYSQL_VERSION}
-echo "export MYSQL_HOME=${MYSQL_HOME}"       >> ~/.bashrc
-echo "export MYSQL_HOME=${MYSQL_HOME}"       >> ~/.profile
+# export MYSQL_HOME=$(pwd)/mysql-${MYSQL_VERSION}
+# echo "export MYSQL_HOME=${MYSQL_HOME}"       >> ~/.bashrc
+# echo "export MYSQL_HOME=${MYSQL_HOME}"       >> ~/.profile
        
-wget https://cdn.mysql.com/archives/mysql-8.0/mysql-${MYSQL_VERSION}-linux-x86_64-minimal.tar.xz -q  && \
-tar -xf mysql-${MYSQL_VERSION}-linux-x86_64-minimal.tar.xz >> /dev/null                              && \
-rm      mysql-${MYSQL_VERSION}-linux-x86_64-minimal.tar.xz                                           && \
-mv      mysql-${MYSQL_VERSION}-linux-x86_64-minimal        mysql-${MYSQL_VERSION} 
+# wget https://cdn.mysql.com/archives/mysql-8.0/mysql-${MYSQL_VERSION}-linux-x86_64-minimal.tar.xz -q  && \
+# tar -xf mysql-${MYSQL_VERSION}-linux-x86_64-minimal.tar.xz >> /dev/null                              && \
+# rm      mysql-${MYSQL_VERSION}-linux-x86_64-minimal.tar.xz                                           && \
+# mv      mysql-${MYSQL_VERSION}-linux-x86_64-minimal        mysql-${MYSQL_VERSION} 
 
-# adding bin/ to $path
-echo "export PATH=\$PATH:\$MYSQL_HOME/bin"   >> ~/.bashrc
-echo "export PATH=\$PATH:\$MYSQL_HOME/bin"   >> ~/.profile
+# # adding bin/ to $path
+# echo "export PATH=\$PATH:\$MYSQL_HOME/bin"   >> ~/.bashrc
+# echo "export PATH=\$PATH:\$MYSQL_HOME/bin"   >> ~/.profile
 
 
 

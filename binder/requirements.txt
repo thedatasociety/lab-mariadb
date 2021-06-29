@@ -5,7 +5,7 @@
 # ipython-sql
 sqlalchemy
 ipython-sql
-# jupyterlab_sql
+jupyterlab_sql
 mysqlclient
 
 # jupyter/jupyterlab extensions

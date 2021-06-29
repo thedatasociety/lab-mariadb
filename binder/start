@@ -7,14 +7,11 @@ chmod +x ~/binder/start.vscode
 
 
 # starting mysql or mariadb in parallel
-# ~/binder/start.mariadb   &
-~/binder/start.mysql   &
+~/binder/start.mariadb   &
+# ~/binder/start.mysql   &
 
 # executing vscode-related startup commands
 ~/binder/start.vscode   &
-
-# [MariaDB Kernel] Install the kernelspec so that the kernel becomes visible to JupyterLab 
-# python3 -m mariadb_kernel.install
 
 # DO NOT REMOVE(!) 
 # Here is why: https://mybinder.readthedocs.io/en/latest/config_files.html#start-run-code-before-the-user-sessions-starts
