@@ -21,7 +21,7 @@
 </div>
 <!-- /ds header -->
 
-# lab-mariadb sandbox
+# lab-mariadb - A sandbox for learning MariaDB
 
 A binderhub-ready repository template for launching specific interfaces on [binderhub](https://github.com/jupyterhub/binderhub) instances while running a MySQL server.
 
