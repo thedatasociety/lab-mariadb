@@ -21,7 +21,7 @@
 </div>
 <!-- /ds header -->
 
-# binderhub-mysql sandbox
+# lab-mariadb sandbox
 
 A binderhub-ready repository template for launching specific interfaces on [binderhub](https://github.com/jupyterhub/binderhub) instances while running a MySQL server.
 
@@ -68,42 +68,42 @@ The list below provides badges/hyperlinks for launching one of the interfaces in
 
 #### JupyterLab 
   
-  - [![launch @ gke.mybinder.org][badge-jupyterlab-gke-mybinder-org]](https://gke.mybinder.org/v2/gh/thedatasociety/binderhub-mysql/master?urlpath=lab)
+  - [![launch @ gke.mybinder.org][badge-jupyterlab-gke-mybinder-org]](https://gke.mybinder.org/v2/gh/thedatasociety/lab-mariadb/master?urlpath=lab)
 
-  - [![launch @ ovh.mybinder.org][badge-jupyterlab-ovh-mybinder-org]](https://ovh.mybinder.org/v2/gh/thedatasociety/binderhub-mysql/master?urlpath=lab)
+  - [![launch @ ovh.mybinder.org][badge-jupyterlab-ovh-mybinder-org]](https://ovh.mybinder.org/v2/gh/thedatasociety/lab-mariadb/master?urlpath=lab)
 
-  - [![launch @ turing.mybinder.org][badge-jupyterlab-turing-mybinder-org]](https://turing.mybinder.org/v2/gh/thedatasociety/binderhub-mysql/master?urlpath=lab)
+  - [![launch @ turing.mybinder.org][badge-jupyterlab-turing-mybinder-org]](https://turing.mybinder.org/v2/gh/thedatasociety/lab-mariadb/master?urlpath=lab)
 
-  - [![launch @ gesis.org][badge-jupyterlab-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-mysql/master?urlpath=lab)
+  - [![launch @ gesis.org][badge-jupyterlab-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/lab-mariadb/master?urlpath=lab)
 
-  - [![launch @ pangeo.io][badge-jupyterlab-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-mysql/master?urlpath=lab)
+  - [![launch @ pangeo.io][badge-jupyterlab-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/lab-mariadb/master?urlpath=lab)
 
 
 #### Jupyter 
   
-  - [![launch @ gke.mybinder.org][badge-jupyter-gke-mybinder-org]](https://gke.mybinder.org/v2/gh/thedatasociety/binderhub-mysql/master?urlpath=tree)
+  - [![launch @ gke.mybinder.org][badge-jupyter-gke-mybinder-org]](https://gke.mybinder.org/v2/gh/thedatasociety/lab-mariadb/master?urlpath=tree)
 
-  - [![launch @ ovh.mybinder.org][badge-jupyter-ovh-mybinder-org]](https://ovh.mybinder.org/v2/gh/thedatasociety/binderhub-mysql/master?urlpath=tree)
+  - [![launch @ ovh.mybinder.org][badge-jupyter-ovh-mybinder-org]](https://ovh.mybinder.org/v2/gh/thedatasociety/lab-mariadb/master?urlpath=tree)
 
-  - [![launch @ turing.mybinder.org][badge-jupyter-turing-mybinder-org]](https://turing.mybinder.org/v2/gh/thedatasociety/binderhub-mysql/master?urlpath=tree)
+  - [![launch @ turing.mybinder.org][badge-jupyter-turing-mybinder-org]](https://turing.mybinder.org/v2/gh/thedatasociety/lab-mariadb/master?urlpath=tree)
 
-  - [![launch @ gesis.org][badge-jupyter-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-mysql/master?urlpath=tree)
+  - [![launch @ gesis.org][badge-jupyter-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/lab-mariadb/master?urlpath=tree)
 
-  - [![launch @ pangeo.org][badge-jupyter-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-mysql/master?urlpath=tree)
+  - [![launch @ pangeo.org][badge-jupyter-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/lab-mariadb/master?urlpath=tree)
 
 
       
 #### VSCode 
   
-  - [![launch @ gke.mybinder.org][badge-vscode-gke-mybinder-org]](https://gke.mybinder.org/v2/gh/thedatasociety/binderhub-mysql/master?urlpath=vscode/)
+  - [![launch @ gke.mybinder.org][badge-vscode-gke-mybinder-org]](https://gke.mybinder.org/v2/gh/thedatasociety/lab-mariadb/master?urlpath=vscode/)
 
-  - [![launch @ ovh.mybinder.org][badge-vscode-ovh-mybinder-org]](https://ovh.mybinder.org/v2/gh/thedatasociety/binderhub-mysql/master?urlpath=vscode/)
+  - [![launch @ ovh.mybinder.org][badge-vscode-ovh-mybinder-org]](https://ovh.mybinder.org/v2/gh/thedatasociety/lab-mariadb/master?urlpath=vscode/)
 
-  - [![launch @ turing.mybinder.org][badge-vscode-turing-mybinder-org]](https://turing.mybinder.org/v2/gh/thedatasociety/binderhub-mysql/master?urlpath=vscode/)
+  - [![launch @ turing.mybinder.org][badge-vscode-turing-mybinder-org]](https://turing.mybinder.org/v2/gh/thedatasociety/lab-mariadb/master?urlpath=vscode/)
 
-  - [![launch @ gesis.org][badge-vscode-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-mysql/master?urlpath=vscode/)
+  - [![launch @ gesis.org][badge-vscode-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/lab-mariadb/master?urlpath=vscode/)
 
-  - [![launch @ pangeo.io][badge-vscode-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-mysql/master?urlpath=vscode/)
+  - [![launch @ pangeo.io][badge-vscode-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/lab-mariadb/master?urlpath=vscode/)
 
 
     
@@ -120,7 +120,7 @@ Please also be aware that the `--ip 0.0.0.0` directive will start a sever which 
 ```bash
 repo2docker -p 8888:8888 \
             -v $(echo ~):$(echo ~)/local-home \
-            https://github.com/thedatasociety/binderhub-mysql \
+            https://github.com/thedatasociety/lab-mariadb \
             jupyter lab --ip 0.0.0.0 --NotebookApp.token='dstoken1234567'
 ```
 
@@ -145,10 +145,10 @@ See the [repo2docker](https://github.com/jupyter/repo2docker) documentation for 
 
 <!-- icons -->
 
-[icon-twitter]:https://raw.githubusercontent.com/thedatasociety/binderhub-mysql/master/resources/images/twitter-icon.png
-[icon-slack]:https://raw.githubusercontent.com/thedatasociety/binderhub-mysql/master/resources/images/slack-icon.png
-[icon-github]:https://raw.githubusercontent.com/thedatasociety/binderhub-mysql/master/resources/images/github-icon.png
-[icon-docker]:https://raw.githubusercontent.com/thedatasociety/binderhub-mysql/master/resources/images/docker-icon.png
+[icon-twitter]:https://raw.githubusercontent.com/thedatasociety/lab-mariadb/master/resources/images/twitter-icon.png
+[icon-slack]:https://raw.githubusercontent.com/thedatasociety/lab-mariadb/master/resources/images/slack-icon.png
+[icon-github]:https://raw.githubusercontent.com/thedatasociety/lab-mariadb/master/resources/images/github-icon.png
+[icon-docker]:https://raw.githubusercontent.com/thedatasociety/lab-mariadb/master/resources/images/docker-icon.png
 
 <!-- JupyterLab badges -->
 
