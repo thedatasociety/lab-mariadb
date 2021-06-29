@@ -1,0 +1,20 @@
+#!/bin/bash
+
+mkdir ${MARIADB_HOME}/mysql-data
+
+touch ${MARIADB_HOME}/server-config.cnf
+echo "[server]"                           >> ${MARIADB_HOME}/server-config.cnf
+echo "user=${USER}"                       >> ${MARIADB_HOME}/server-config.cnf
+echo "basedir=${MARIADB_HOME}"            >> ${MARIADB_HOME}/server-config.cnf
+echo "datadir=${MARIADB_HOME}/mysql-data" >> ${MARIADB_HOME}/server-config.cnf
+echo "socket=${MARIADB_HOME}/socket"      >> ${MARIADB_HOME}/server-config.cnf
+echo "port=3306"                          >> ${MARIADB_HOME}/server-config.cnf
+
+$MARIADB_HOME/scripts/mysql_install_db  --defaults-file=$MARIADB_HOME/server-config.cnf \
+                                        --user=${USER}                                  \
+                                        --basedir=${MARIADB_HOME}                       \
+                                        --datadir=${MARIADB_HOME}/mysql-data            \
+                                        --socket=${MARIADB_HOME}/socket    
+
+cd     ${MARIADB_HOME} && \
+nohup  ${MARIADB_HOME}/bin/mysqld_safe --datadir=${MARIADB_HOME}/mysql-data &

@@ -1,0 +1,17 @@
+###############################################################
+#          jupyter/jupyterlab extensions/kernels              #
+###############################################################
+
+# ipython-sql
+sqlalchemy
+ipython-sql
+# jupyterlab_sql
+mysqlclient
+
+# jupyter/jupyterlab extensions
+jupyter-server-proxy
+mariadb_kernel
+
+#vscode
+numpy
+jupyter-vscode-proxy
