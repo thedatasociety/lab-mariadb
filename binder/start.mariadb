@@ -21,8 +21,13 @@ ${MARIADB_HOME}/bin/mariadbd-safe --datadir=${MARIADB_HOME}/mariadb-data  --skip
 
 # waiting for mariadbd startup
 while ! mariadb-admin ping -h 127.0.0.1 --silent; do
-    echo "mariadb is down...";
-    sleep 5
+    echo "MariaDB is down...";
+    sleep 1
 done
 
-echo "mariadb is up!";
+echo "MariaDB is up!";
+
+echo "Importing Databases to MariaDB"
+${MARIADB_HOME}/bin/mariadb < ~/resources/datasets/movielens_data.sql 
+echo "Ready"
+touch ~/ready
