@@ -75,7 +75,7 @@ echo "export PATH=\$PATH:\$MARIADB_HOME/bin"     >> ~/.profile
 #             vscode/code-server installation                 #
 ###############################################################
 
-export CODE_SERVER_VERSION=3.4.1
+export CODE_SERVER_VERSION=3.10.2
 echo "export CODE_SERVER_VERSION=${CODE_SERVER_VERSION}" >> ~/.bashrc
 echo "export CODE_SERVER_VERSION=${CODE_SERVER_VERSION}" >> ~/.profile
 
@@ -85,11 +85,15 @@ echo "export CODE_SERVER_HOME=${CODE_SERVER_HOME}"       >> ~/.profile
 
 
 # Download and install VS Code server
-wget -q -O code-server.tar.gz https://github.com/cdr/code-server/releases/download/$CODE_SERVER_VERSION/code-server-$CODE_SERVER_VERSION-linux-x86_64.tar.gz                            
+wget -q -O code-server.tar.gz https://github.com/cdr/code-server/releases/download/v$CODE_SERVER_VERSION/code-server-$CODE_SERVER_VERSION-linux-amd64.tar.gz
 tar xzf code-server.tar.gz
-mv code-server-${CODE_SERVER_VERSION}-linux-x86_64 code-server-$CODE_SERVER_VERSION
+mv code-server-${CODE_SERVER_VERSION}-linux-amd64 code-server-$CODE_SERVER_VERSION
 rm -rf code-server.tar.gz
 
 # adding bin/ to $path
 echo "export PATH=\$PATH:\$CODE_SERVER_HOME/bin"   >> ~/.bashrc
 echo "export PATH=\$PATH:\$CODE_SERVER_HOME/bin"   >> ~/.profile
+
+# adding extension servers 
+echo "export SERVICE_URL=https://open-vsx.org/vscode/gallery"  >> ~/.bashrc
+echo "export ITEM_URL=https://open-vsx.org/vscode/item"        >> ~/.profile

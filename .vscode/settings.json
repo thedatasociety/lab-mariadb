@@ -1,0 +1,48 @@
+{
+    "workbench.colorTheme": "Visual Studio Dark",
+    "files.exclude": {
+        "**/.bashrc": true,
+        "**/..jupyter-server-log.txt": true,
+        "**/.bash_logout": true,
+        "**/.wget-hsts": true,
+        "**/.profile": true,
+        "**/.cache": true,
+        "**/.config": true,
+        "**/.jupyter": true,
+        "**/.local": true,
+        "**/.npm": true,
+        "**/.gitignore": true,
+        "**/.yarn": true,
+        "**/.vscode": true,
+        "**/jupyter_vscode_proxy.egg-info": true
+    },
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+              "authProtocol": "default"
+            },
+            "previewLimit": 1000,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MariaDB",
+            "name": "Local MariaDB - Movielens",
+            "database": "movielens",
+            "username": "jovyan",
+            "password": ""
+          },
+          {
+            "mysqlOptions": {
+              "authProtocol": "default"
+            },
+            "previewLimit": 1000,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MariaDB",
+            "name": "Local - Debug Matheus",
+            "database": "movielens",
+            "username": "matheus",
+            "password": ""
+          }          
+    ]
+    
+}

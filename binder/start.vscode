@@ -1,27 +1,28 @@
 #!/bin/bash
 
+
+export SERVICE_URL=https://open-vsx.org/vscode/gallery
+export ITEM_URL=https://open-vsx.org/vscode/item
+
 ###############################################
 # Copying vscode config files
 ###############################################
+mkdir -p /home/$USER/.local/share/code-server/User/
+cp ~/.vscode/* /home/$USER/.local/share/code-server/User/
 
-# mkdir -p /home/$USER/.config/Code/User
-# cp ~/.vscode/keybindings.json /home/$USER/.config/Code/User/
-
-#mkdir -p /home/$USER/.config/code-server/User
-#cp ~/.vscode/keybindings.json /home/$USER/.config/code-server/User/
-
-#mkdir -p /home/$USER/.local/share/code-server/User/
-#cp ~/.vscode/keybindings.json /home/$USER/.local/share/code-server/User/
 
 ###############################################
 # Installing vs code extensions
 ###############################################
-code-server --install-extension formulahendry.vscode-mysql
-code-server --install-extension jakebathman.mysql-syntax
-code-server --install-extension mtxr.sqltools
-
-
+code-server --install-extension mtxr.sqltools && sleep 5
+# code-server --install-extension formulahendry.vscode-mysql && sleep 5
+code-server --install-extension jakebathman.mysql-syntax && sleep 5
+code-server --install-extension mtxr.sqltools-driver-mysql && sleep 5
+                                
 ###############################################
 # Starting code-server
 ###############################################
 code-server .  --auth none &
+
+sleep 10
+code-server --install-extension mtxr.sqltools-driver-mysql
