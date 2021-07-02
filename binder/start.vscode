@@ -15,14 +15,11 @@ cp ~/.vscode/* /home/$USER/.local/share/code-server/User/
 # Installing vs code extensions
 ###############################################
 code-server --install-extension mtxr.sqltools && sleep 5
-# code-server --install-extension formulahendry.vscode-mysql && sleep 5
-code-server --install-extension jakebathman.mysql-syntax && sleep 5
 code-server --install-extension mtxr.sqltools-driver-mysql && sleep 5
+# code-server --install-extension formulahendry.vscode-mysql && sleep 5
+# code-server --install-extension jakebathman.mysql-syntax && sleep 5
                                 
 ###############################################
 # Starting code-server
 ###############################################
 code-server .  --auth none &
-
-sleep 10
-code-server --install-extension mtxr.sqltools-driver-mysql

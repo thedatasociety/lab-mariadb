@@ -2,7 +2,7 @@
     "workbench.colorTheme": "Visual Studio Dark",
     "files.exclude": {
         "**/.bashrc": true,
-        "**/..jupyter-server-log.txt": true,
+        "**/.jupyter-server-log.txt": true,
         "**/.bash_logout": true,
         "**/.wget-hsts": true,
         "**/.profile": true,
@@ -21,7 +21,7 @@
             "mysqlOptions": {
               "authProtocol": "default"
             },
-            "previewLimit": 1000,
+            "previewLimit": 100,
             "server": "localhost",
             "port": 3306,
             "driver": "MariaDB",
@@ -34,7 +34,7 @@
             "mysqlOptions": {
               "authProtocol": "default"
             },
-            "previewLimit": 1000,
+            "previewLimit": 100,
             "server": "localhost",
             "port": 3306,
             "driver": "MariaDB",
@@ -42,7 +42,20 @@
             "database": "movielens",
             "username": "matheus",
             "password": ""
-          }          
+          },
+          {
+            "mysqlOptions": {
+              "authProtocol": "default"
+            },
+            "previewLimit": 100,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MariaDB",
+            "name": "Local - Taxis",
+            "database": "taxis",
+            "username": "jovyan",
+            "password": ""
+          }                    
     ]
     
 }
