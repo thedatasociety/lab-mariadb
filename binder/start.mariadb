@@ -29,5 +29,7 @@ echo "MariaDB is up!";
 
 echo "Importing Databases to MariaDB"
 ${MARIADB_HOME}/bin/mariadb < ~/resources/datasets/movielens_data.sql 
+
+cd ~/resources/datasets/employees && ${MARIADB_HOME}/bin/mariadb < employees.sql && cd ~
 echo "Ready"
 touch ~/ready
