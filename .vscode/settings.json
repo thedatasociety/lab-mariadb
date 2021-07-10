@@ -1,61 +1,69 @@
 {
-    "workbench.colorTheme": "Visual Studio Dark",
-    "files.exclude": {
-        "**/.bashrc": true,
-        "**/.jupyter-server-log.txt": true,
-        "**/.bash_logout": true,
-        "**/.wget-hsts": true,
-        "**/.profile": true,
-        "**/.cache": true,
-        "**/.config": true,
-        "**/.jupyter": true,
-        "**/.local": true,
-        "**/.npm": true,
-        "**/.gitignore": true,
-        "**/.yarn": true,
-        "**/.vscode": true,
-        "**/jupyter_vscode_proxy.egg-info": true
+  "jupyter.alwaysTrustNotebooks": true,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "files.exclude": {
+    "**/.bashrc": true,
+    "**/.jupyter-server-log.txt": true,
+    "**/.bash_logout": true,
+    "**/.wget-hsts": true,
+    "**/.profile": true,
+    "**/.cache": true,
+    "**/.config": true,
+    "**/.jupyter": true,
+    "**/.ipynb_checkpoints": true,
+    "**/.local": true,
+    "**/.npm": true,
+    "**/.gitignore": true,
+    "**/.yarn": true,
+    "**/.vscode": true,
+    "**/jupyter_vscode_proxy.egg-info": true
+  },
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 100,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MariaDB",
+      "name": "Local MariaDB - Movielens",
+      "database": "movielens",
+      "username": "jovyan",
+      "password": ""
     },
-    "sqltools.connections": [
-        {
-            "mysqlOptions": {
-              "authProtocol": "default"
-            },
-            "previewLimit": 100,
-            "server": "localhost",
-            "port": 3306,
-            "driver": "MariaDB",
-            "name": "Local MariaDB - Movielens",
-            "database": "movielens",
-            "username": "jovyan",
-            "password": ""
-          },
-          {
-            "mysqlOptions": {
-              "authProtocol": "default"
-            },
-            "previewLimit": 100,
-            "server": "localhost",
-            "port": 3306,
-            "driver": "MariaDB",
-            "name": "Local - Debug Matheus",
-            "database": "movielens",
-            "username": "matheus",
-            "password": ""
-          },
-          {
-            "mysqlOptions": {
-              "authProtocol": "default"
-            },
-            "previewLimit": 100,
-            "server": "localhost",
-            "port": 3306,
-            "driver": "MariaDB",
-            "name": "Local - Taxis",
-            "database": "taxis",
-            "username": "jovyan",
-            "password": ""
-          }                    
-    ]
-    
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 100,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MariaDB",
+      "name": "Local - Debug Matheus",
+      "database": "movielens",
+      "username": "matheus",
+      "password": ""
+    },
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 100,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MariaDB",
+      "name": "Local - Taxis",
+      "database": "taxis",
+      "username": "jovyan",
+      "password": ""
+    }
+  ]
 }

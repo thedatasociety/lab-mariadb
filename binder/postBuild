@@ -25,7 +25,7 @@ python3 -m mariadb_kernel.install
 
 mkdir ~/resources/local
 cd    ~/resources/local
-
+touch .gitignore
 
 ###############################################################
 #             mariadb installation                           #

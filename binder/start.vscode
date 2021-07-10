@@ -1,9 +1,6 @@
 #!/bin/bash
 
 
-export SERVICE_URL=https://open-vsx.org/vscode/gallery
-export ITEM_URL=https://open-vsx.org/vscode/item
-
 ###############################################
 # Copying vscode config files
 ###############################################
@@ -14,12 +11,21 @@ cp ~/.vscode/* /home/$USER/.local/share/code-server/User/
 ###############################################
 # Installing vs code extensions
 ###############################################
-code-server --install-extension mtxr.sqltools && sleep 5
-code-server --install-extension mtxr.sqltools-driver-mysql && sleep 5
+
+code-server --force --install-extension 'ms-toolsai.jupyter' && sleep 1
+code-server --force --install-extension 'pkief.material-icon-theme' && sleep 1
+
+# open gallery
+export SERVICE_URL=https://open-vsx.org/vscode/gallery
+export ITEM_URL=https://open-vsx.org/vscode/item
+code-server --install-extension 'mtxr.sqltools' && sleep 1
+code-server --install-extension 'mtxr.sqltools-driver-mysq'l && sleep 1
+
+
 # code-server --install-extension formulahendry.vscode-mysql && sleep 5
 # code-server --install-extension jakebathman.mysql-syntax && sleep 5
                                 
 ###############################################
 # Starting code-server
 ###############################################
-code-server .  --auth none &
+code-server . --auth none &
