@@ -40,7 +40,7 @@ A binderhub-ready repository template for launching specific interfaces on [bind
 <!-- /MarkdownTOC -->
 
 
-### Launching this repository on a [binderhub](https://github.com/jupyterhub/binderhub) instance
+### Launching this repository on [binderhub](https://github.com/jupyterhub/binderhub) instances
 
 [Binderhub](https://github.com/jupyterhub/binderhub) uses [repo2docker](https://github.com/jupyter/repo2docker) for launching and serving the computational environments. Repo2docker supports the following interfaces: 
 - [Jupyter](https://jupyter.org/)
