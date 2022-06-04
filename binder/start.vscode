@@ -12,8 +12,8 @@ cp ~/.vscode/* /home/$USER/.local/share/code-server/User/
 # Installing vs code extensions
 ###############################################
 
-code-server --force --install-extension 'ms-toolsai.jupyter' && sleep 1
-code-server --force --install-extension 'pkief.material-icon-theme' && sleep 1
+# code-server --force --install-extension 'ms-toolsai.jupyter' && sleep 1
+# code-server --force --install-extension 'pkief.material-icon-theme' && sleep 1
 
 # open gallery
 export SERVICE_URL=https://open-vsx.org/vscode/gallery

@@ -16,8 +16,8 @@ $MARIADB_HOME/scripts/mysql_install_db  --defaults-file=$MARIADB_HOME/server-con
                                         --datadir=${MARIADB_HOME}/mysql-data            \
                                         --socket=${MARIADB_HOME}/socket    
 
-cd     ${MARIADB_HOME} && \
-${MARIADB_HOME}/bin/mariadbd-safe --datadir=${MARIADB_HOME}/mariadb-data  --skip-grant-tables &
+cd ${MARIADB_HOME} && \
+   ${MARIADB_HOME}/bin/mariadbd-safe --datadir=${MARIADB_HOME}/mariadb-data  --skip-grant-tables &
 
 # waiting for mariadbd startup
 while ! mariadb-admin ping -h 127.0.0.1 --silent; do

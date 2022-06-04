@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# manking start files executable
+# making start files executable
 chmod +x ~/binder/start.mysql 
 chmod +x ~/binder/start.mariadb 
 chmod +x ~/binder/start.vscode 
@@ -14,7 +14,7 @@ chmod +x ~/binder/start.vscode
 ~/binder/start.vscode   &
 
 cd ~
-echo " " >> .gitignore
+touch .gitignore
 echo "resources/local/" >> .gitignore
 echo ".local/" >> .gitignore
 echo "local-home/" >> .gitignore
