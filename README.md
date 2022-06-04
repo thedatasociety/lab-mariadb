@@ -117,15 +117,23 @@ The command below launches a container on port `8888`. It also creates a Docker 
 Before running it, make sure your local user is in the `docker` group. Please refer to this Docker [documentation](https://docs.docker.com/install/linux/linux-postinstall/) for more details. **It is strongly advised to not to run the container as root**. 
 Please also be aware that the `--ip 0.0.0.0` directive will start a sever which **will accept connections from any ip**. For security purposes the `--NotebookApp.token='dstoken1234567'` directive forces the use of a security token for accessing any interface. Use the `dstoken1234567` to login or feel free to set a stronger token.
 
+Quick way to build and start a container from this repository:
+
+```bash
+repo2docker https://github.com/thedatasociety/lab-mariadb jupyter lab
+```
+Parametrizing the container:
 ```bash
 repo2docker -p 8888:8888 \
             -v $(echo ~):$(echo ~)/local-home \
             https://github.com/thedatasociety/lab-mariadb \
             jupyter lab \ 
-            --NotebookApp.token='dstoken1234567' \
+            --NotebookApp.token='mypassword' \
             --ip 0.0.0.0 
 
 ```
+
+
 
 Each interface will be available at a specific path, as follows:
 
