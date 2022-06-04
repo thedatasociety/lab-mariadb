@@ -5,19 +5,16 @@
 ###############################################################
 
 # ipython-sql extension install
-echo "Ipython-sql extension install"
-jupyter serverextension enable jupyterlab_sql --py --sys-prefix
+# echo "Ipython-sql extension install"
+# jupyter serverextension enable jupyterlab_sql --py --sys-prefix
 
-# Table of contents Jupyter Lab Extension
-# echo "Table of contents Jupyter Lab extension install"
-# jupyter labextension install @jupyterlab/toc --no-build 
 
 # [MariaDB Kernel] Install the kernelspec so that the kernel becomes visible to JupyterLab 
-python3 -m mariadb_kernel.install
+# python3 -m mariadb_kernel.install
 
 # Building everything up
 #echo "Building everything up (jupyter lab build)"
-# jupyter lab build 
+jupyter lab build 
 
 ###############################################################
 #             moving to a local installation folder           #
@@ -39,7 +36,7 @@ export MARIADB_HOME=$(pwd)/mariadb-${MARIADB_VERSION}
 echo "export MARIADB_HOME=${MARIADB_HOME}"       >> ~/.bashrc
 echo "export MARIADB_HOME=${MARIADB_HOME}"       >> ~/.profile
 
-wget https://archive.mariadb.org/mariadb-${MARIADB_VERSION}/bintar-linux-glibc_214-x86_64/mariadb-${MARIADB_VERSION}-linux-glibc_214-x86_64.tar.gz -q  && \
+# wget https://archive.mariadb.org/mariadb-${MARIADB_VERSION}/bintar-linux-glibc_214-x86_64/mariadb-${MARIADB_VERSION}-linux-glibc_214-x86_64.tar.gz -q  && \
      
 tar -xvf mariadb-${MARIADB_VERSION}-linux-glibc_214-x86_64.tar.gz >> /dev/null  && \
 rm mariadb-${MARIADB_VERSION}-linux-glibc_214-x86_64.tar.gz                     && \

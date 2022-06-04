@@ -10,4 +10,3 @@ libaio1
 libaio-dev
 numactl
 libncurses5
-#mariadb-server

@@ -1,17 +1,15 @@
 #!/bin/bash
 
 # making start files executable
-chmod +x ~/binder/start.mysql 
 chmod +x ~/binder/start.mariadb 
 chmod +x ~/binder/start.vscode 
 
 
 # starting mysql or mariadb in parallel
-~/binder/start.mariadb   &
-# ~/binder/start.mysql   &
+# ~/binder/start.mariadb   &
 
 # executing vscode-related startup commands
-~/binder/start.vscode   &
+# ~/binder/start.vscode   &
 
 cd ~
 touch .gitignore
