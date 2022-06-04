@@ -121,7 +121,10 @@ Please also be aware that the `--ip 0.0.0.0` directive will start a sever which 
 repo2docker -p 8888:8888 \
             -v $(echo ~):$(echo ~)/local-home \
             https://github.com/thedatasociety/lab-mariadb \
-            jupyter lab --ip 0.0.0.0 --NotebookApp.token='dstoken1234567'
+            jupyter lab \ 
+            --NotebookApp.token='dstoken1234567' \
+            --ip 0.0.0.0 
+
 ```
 
 Each interface will be available at a specific path, as follows:
