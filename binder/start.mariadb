@@ -1,5 +1,8 @@
 #!/bin/bash
 
+
+echo '{"host": "127.0.0.1"}' >> ~/.jupyter/mariadb_config.json
+
 mkdir ${MARIADB_HOME}/mariadb-data
 
 touch ${MARIADB_HOME}/server-config.cnf

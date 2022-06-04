@@ -2,15 +2,13 @@
 #          jupyter/jupyterlab extensions/kernels              #
 ###############################################################
 
-# sqlalchemy
-# ipython-sql
-# jupyterlab_sql
-# mysqlclient
-
 # jupyter/jupyterlab extensions
-# jupyter-server-proxy
-# mariadb_kernel
+jupyter-server-proxy
+jupyter-vscode-proxy
 
-#vscode
-numpy
-# jupyter-vscode-proxy
+# lab-related packages
+mariadb_kernel
+sqlalchemy
+ipython-sql
+jupyterlab_sql
+mysqlclient

@@ -6,18 +6,18 @@ chmod +x ~/binder/start.vscode
 
 
 # starting mysql or mariadb in parallel
-# ~/binder/start.mariadb   &
+~/binder/start.mariadb   &
+
 
 # executing vscode-related startup commands
-# ~/binder/start.vscode   &
+~/binder/start.vscode   &
 
+# ignoring some files for better presentation
 cd ~
-touch .gitignore
+echo "" >> .gitignore
 echo "resources/local/" >> .gitignore
 echo ".local/" >> .gitignore
 echo "local-home/" >> .gitignore
-
-
 
 
 # DO NOT REMOVE(!) 
