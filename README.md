@@ -120,9 +120,13 @@ Please also be aware that the `--ip 0.0.0.0` directive will start a sever which 
 Quick way to build and start a container from this repository:
 
 ```bash
-repo2docker https://github.com/thedatasociety/lab-mariadb jupyter lab
+repo2docker -p 8888:8888 ./ jupyter lab --ip 0.0.0.0
 ```
-Parametrizing the container:
+
+The command above will print a URL to access the Jupyter Lab environment.
+
+
+Parametrizing the container (be careful):
 ```bash
 repo2docker -p 8888:8888 \
             -v $(echo ~):$(echo ~)/local-home \
@@ -132,7 +136,6 @@ repo2docker -p 8888:8888 \
             --ip 0.0.0.0 
 
 ```
-
 
 
 Each interface will be available at a specific path, as follows:
