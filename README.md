@@ -7,16 +7,16 @@
 <br/>
 <!-- /ds header -->
 
-# Sandbox for learning Relational Databases via MariaDB
+# Sandbox for learning Relational Databases using MariaDB as an instance
 
-A binderhub-ready repository template for launching specific interfaces on [binderhub](https://github.com/jupyterhub/binderhub) instances while running a MariaDB/MySQL server.
+This is binderhub-ready repository template for launching specific interfaces on [binderhub](https://github.com/jupyterhub/binderhub) instances while running a MariaDB/MySQL server.
 
 ## Launching this repository on [binderhub](https://github.com/jupyterhub/binderhub) instances
 
-[Binderhub](https://github.com/jupyterhub/binderhub) uses [repo2docker](https://github.com/jupyter/repo2docker) for launching and serving the computational environments. Repo2docker supports multiple interfaces, such as [Jupyter](https://jupyter.org/), [JupyterLab](https://github.com/jupyterlab/jupyterlab), [VSCode](https://code.visualstudio.com), etc. Read more on [My Binder Federation](https://binderhub.readthedocs.io/en/latest/federation/federation.html).
+[Binderhub](https://github.com/jupyterhub/binderhub) uses [repo2docker](https://github.com/jupyter/repo2docker) for launching and serving computational environments. Repo2docker supports multiple interfaces, such as [Jupyter](https://jupyter.org/), [JupyterLab](https://github.com/jupyterlab/jupyterlab), [VSCode](https://code.visualstudio.com), etc. [Mybinder.org](mybinder.org) is a public service for launching binder instances on a federation of Binderhub deployments.  Read more on [My Binder Federation](https://binderhub.readthedocs.io/en/latest/federation/federation.html).
 
 
-The list below provides badges/hyperlinks for launching one of the interfaces in different binderhub instances.
+The list below provides badges/hyperlinks for launching one of the interfaces on different binderhub instances.
     
 
 
