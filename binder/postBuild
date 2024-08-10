@@ -11,11 +11,10 @@ python3 -m mariadb_kernel.install
 echo "Ipython-sql extension install"
 jupyter serverextension enable jupyterlab_sql --py --sys-prefix
 
-
-
 # Building Jupyter Lab up
 echo "Building everything up (jupyter lab build)"
 jupyter lab build 
+echo "Finished jupyter lab build"
 
 ###############################################################
 #             moving to a local installation folder           #
@@ -28,6 +27,7 @@ touch .gitignore
 ###############################################################
 #             mariadb installation                           #
 ###############################################################
+echo "Starting MariaDB installation"
 
 export MARIADB_VERSION=10.4.20
 echo "export MARIADB_VERSION=${MARIADB_VERSION}" >> ~/.bashrc
@@ -47,6 +47,7 @@ mv mariadb-${MARIADB_VERSION}-linux-glibc_214-x86_64 mariadb-${MARIADB_VERSION}
 echo "export PATH=\$PATH:\$MARIADB_HOME/bin"     >> ~/.bashrc
 echo "export PATH=\$PATH:\$MARIADB_HOME/bin"     >> ~/.profile
 
+echo "MariaDB installation finished"
 ###############################################################
 #             mysql-minimal installation                      #
 ###############################################################
@@ -73,6 +74,7 @@ echo "export PATH=\$PATH:\$MARIADB_HOME/bin"     >> ~/.profile
 ###############################################################
 #             vscode/code-server installation                 #
 ###############################################################
+echo "Starting VSCode installation"
 
 export CODE_SERVER_VERSION=3.10.2
 echo "export CODE_SERVER_VERSION=${CODE_SERVER_VERSION}" >> ~/.bashrc
@@ -96,3 +98,5 @@ echo "export PATH=\$PATH:\$CODE_SERVER_HOME/bin"   >> ~/.profile
 # adding extension servers 
 echo "export SERVICE_URL=https://open-vsx.org/vscode/gallery"  >> ~/.bashrc
 echo "export ITEM_URL=https://open-vsx.org/vscode/item"        >> ~/.profile
+
+echo "VSCode installation finished"
