@@ -5,6 +5,10 @@
 # jupyter/jupyterlab extensions
 jupyter-server-proxy
 jupyter-vscode-proxy
+jupyterlab
+jupyterlab-rise
+ipywidgets
+numpy
 
 # lab-related packages
 mariadb_kernel
