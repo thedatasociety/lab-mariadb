@@ -7,7 +7,7 @@
 <br/>
 <!-- /ds header -->
 
-# Sandbox for learning Document Databases using MongoDB as an instance
+# Sandbox for learning Relational Databases using Maria as an instance
 
 This is binderhub-ready repository template for launching specific interfaces on [binderhub](https://github.com/jupyterhub/binderhub) instances while running a MongoDB server.
 
